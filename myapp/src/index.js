@@ -9,7 +9,7 @@ const usuario = [
   {name: 'Ariel',
   lastname: 'Farbiarz',
   email: 'arielfarbiarz@gmail.com',
-  phone: '1155062768',
+  phone: '1188452587',
   city: 'CABA',
   state: 'Buenos Aires',
   country: 'Argentina'}
@@ -19,7 +19,13 @@ const usuario = [
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Profile usuario={usuario}/>
+    <Profile name= {usuario.name}
+             lastname = {usuario.lastname}
+             email = {usuario.email}
+             phone = {usuario.phone}
+             city = {usuario.city}
+             state = {usuario.state}
+             country = {usuario.country}/>
   </React.StrictMode>
 );
 
